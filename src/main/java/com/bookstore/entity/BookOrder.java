@@ -1,22 +1,46 @@
 package com.bookstore.entity;
 
+import javax.persistence.*;
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
-
+@Entity
+@Table(name = "book_order")
 public class BookOrder {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "order_id")
     private int orderId;
+    @ManyToOne
+    @JoinColumn(name = "customer_id")
     private Customer customerId;
-    private Date orderDate;
+    @Column(name = "order_date",columnDefinition = "datetime")
+    private LocalDate orderDate;
+    @Column(columnDefinition = "float")
     private BigDecimal total;
     private String status;
+    @Column(name = "shipping_address")
     private String shippingAddress;
+    @Column(name = "payment_method")
     private String paymentMethod;
+    @Column(name = "recipient_name")
     private String recipientName;
-    private String phone;
+    @Column(name= "recipient_phone")
+    private String recipientPhone;
+
+    public BookOrder() {
+    }
 
     public int getOrderId() {
         return orderId;
+    }
+
+    public String getRecipientPhone() {
+        return recipientPhone;
+    }
+
+    public void setRecipientPhone(String recipientPhone) {
+        this.recipientPhone = recipientPhone;
     }
 
     public void setOrderId(int orderId) {
@@ -31,11 +55,11 @@ public class BookOrder {
         this.customerId = customerId;
     }
 
-    public Date getOrderDate() {
+    public LocalDate getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(Date orderDate) {
+    public void setOrderDate(LocalDate orderDate) {
         this.orderDate = orderDate;
     }
 
@@ -79,11 +103,4 @@ public class BookOrder {
         this.recipientName = recipientName;
     }
 
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
 }

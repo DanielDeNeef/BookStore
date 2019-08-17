@@ -1,15 +1,25 @@
 package com.bookstore.entity;
 
+import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Date;
 
+@Entity
 public class Review {
-
+    @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Column(name = "review_id")
     private Integer reviewId;
+    @ManyToOne
+    @JoinColumn(name = "book_id")
     private Book bookId;
+    @ManyToOne
+    @JoinColumn(name="customer_id")
     private Customer customerId;
     private String comment;
-    private float rating;
-    private Date reviewOn;
+    private int rating;
+    @Column(name = "review_time",columnDefinition = "datetime")
+    private LocalDate reviewOn;
     private String headline;
 
     public Integer getReviewId() {
@@ -48,15 +58,15 @@ public class Review {
         return rating;
     }
 
-    public void setRating(float rating) {
+    public void setRating(int rating) {
         this.rating = rating;
     }
 
-    public Date getReviewOn() {
+    public LocalDate getReviewOn() {
         return reviewOn;
     }
 
-    public void setReviewOn(Date reviewOn) {
+    public void setReviewOn(LocalDate reviewOn) {
         this.reviewOn = reviewOn;
     }
 

@@ -1,22 +1,42 @@
 package com.bookstore.entity;
 
+import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity
 public class Customer {
-
+    @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Column(name = "customer_id")
     private Integer customerId;
     private String email;
     private String fullName;
     private String address;
     private String city;
     private String country;
-    private Date registerDate;
+    @Column(name = "register_date",columnDefinition = "datetime")
+    private LocalDate registerDate;
     private String password;
     private String phone;
     private String zipcode;
-    private Set<BookOrder> bookOrderId=new HashSet<>();
+
+    public Customer() {
+    }
+
+    public Customer(String email, String fullName, String address, String city, String country, LocalDate registerDate, String password, String phone, String zipcode) {
+        this.email = email;
+        this.fullName = fullName;
+        this.address = address;
+        this.city = city;
+        this.country = country;
+        this.registerDate = registerDate;
+        this.password = password;
+        this.phone = phone;
+        this.zipcode = zipcode;
+    }
 
     public Integer getCustomerId() {
         return customerId;
@@ -66,11 +86,11 @@ public class Customer {
         this.country = country;
     }
 
-    public Date getRegisterDate() {
+    public LocalDate getRegisterDate() {
         return registerDate;
     }
 
-    public void setRegisterDate(Date registerDate) {
+    public void setRegisterDate(LocalDate registerDate) {
         this.registerDate = registerDate;
     }
 
@@ -98,11 +118,4 @@ public class Customer {
         this.zipcode = zipcode;
     }
 
-    public Set<BookOrder> getBookOrderId() {
-        return bookOrderId;
-    }
-
-    public void setBookOrderId(Set<BookOrder> bookOrderId) {
-        this.bookOrderId = bookOrderId;
-    }
-}
+   }

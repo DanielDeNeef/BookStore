@@ -4,14 +4,19 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-
+@Entity
 public class Category {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "category_id")
     private Integer categoryId;
     private String name;
-
+    @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
     private Set<Book> books=new HashSet<>();
+
+    public Category() {
+    }
 
     public Category(String name) {
         this.name = name;

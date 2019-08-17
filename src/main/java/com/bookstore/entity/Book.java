@@ -2,25 +2,36 @@ package com.bookstore.entity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity
 public class Book {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "book_id")
     private Integer bookId;
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "category_id")
     private Category category;
     private String title;
     private String author;
+    @Column(columnDefinition = "mediumtext")
     private String description;
     private String isbn;
+    @Column(columnDefinition = "blob")
     private byte[] image;
+    @Column(columnDefinition = "float")
     private BigDecimal price;
-    private Date publishDate;
-    private Date lastUpdatedOn;
-    private Set<Review> reviews = new HashSet<>();
-    private Set<OrderDetail> orderDetails = new HashSet<>();
+    @Column(name = "publish_date")
+    private LocalDate publishDate;
+    @Column(name = "last_update_time",columnDefinition = "datetime")
+    private LocalDate lastUpdatedOn;
+
+    public Book() {
+    }
 
     public Integer getBookId() {
         return bookId;
@@ -86,35 +97,20 @@ public class Book {
         this.price = price;
     }
 
-    public Date getPublishDate() {
+    public LocalDate getPublishDate() {
         return publishDate;
     }
 
-    public void setPublishDate(Date publishDate) {
+    public void setPublishDate(LocalDate publishDate) {
         this.publishDate = publishDate;
     }
 
-    public Date getLastUpdatedOn() {
+    public LocalDate getLastUpdatedOn() {
         return lastUpdatedOn;
     }
 
-    public void setLastUpdatedOn(Date lastUpdatedOn) {
+    public void setLastUpdatedOn(LocalDate lastUpdatedOn) {
         this.lastUpdatedOn = lastUpdatedOn;
     }
 
-    public Set<Review> getReviews() {
-        return reviews;
-    }
-
-    public void setReviews(Set<Review> reviews) {
-        this.reviews = reviews;
-    }
-
-    public Set<OrderDetail> getOrderDetails() {
-        return orderDetails;
-    }
-
-    public void setOrderDetails(Set<OrderDetail> orderDetails) {
-        this.orderDetails = orderDetails;
-    }
-}
+   }
