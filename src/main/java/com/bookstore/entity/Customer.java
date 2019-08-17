@@ -22,6 +22,8 @@ public class Customer {
     private String password;
     private String phone;
     private String zipcode;
+    @OneToMany(mappedBy = "customer",fetch = FetchType.LAZY)
+    private Set<BookOrder> bookOrders = new HashSet<>();
 
     public Customer() {
     }

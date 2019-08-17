@@ -29,8 +29,28 @@ public class Book {
     private LocalDate publishDate;
     @Column(name = "last_update_time",columnDefinition = "datetime")
     private LocalDate lastUpdatedOn;
+    @OneToMany(mappedBy = "book",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    private Set<OrderDetail> orderDetails = new HashSet<>();
+    @OneToMany(mappedBy = "book",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    private Set<Review>reviews=new HashSet<>();
 
     public Book() {
+    }
+
+    public Set<OrderDetail> getOrderDetails() {
+        return orderDetails;
+    }
+
+    public void setOrderDetails(Set<OrderDetail> orderDetails) {
+        this.orderDetails = orderDetails;
+    }
+
+    public Set<Review> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(Set<Review> reviews) {
+        this.reviews = reviews;
     }
 
     public Integer getBookId() {

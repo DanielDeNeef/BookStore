@@ -11,29 +11,29 @@ public class OrderDetail implements Serializable {
     @Id
     @ManyToOne
     @JoinColumn(name = "order_id")
-    private BookOrder orderId;
+    private BookOrder bookorder;
     @Id
     @ManyToOne
     @JoinColumn(name = "book_id")
-    private Book bookid;
+    private Book book;
     private int quantity;
     @Column(columnDefinition = "float")
     private BigDecimal subtotal;
 
-    public BookOrder getOrderId() {
-        return orderId;
+    public BookOrder getBookorder() {
+        return bookorder;
     }
 
-    public void setOrderId(BookOrder orderId) {
-        this.orderId = orderId;
+    public void setBookorder(BookOrder orderId) {
+        this.bookorder = orderId;
     }
 
-    public Book getBookid() {
-        return bookid;
+    public Book getBook() {
+        return book;
     }
 
-    public void setBookid(Book bookid) {
-        this.bookid = bookid;
+    public void setBook(Book bookid) {
+        this.book = bookid;
     }
 
     public int getQuantity() {

@@ -9,8 +9,6 @@ import javax.persistence.Persistence;
 
 import java.math.BigDecimal;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class OrderDetailTest {
     EntityManagerFactory emf = Persistence.createEntityManagerFactory("bookstore");
     EntityManager em = emf.createEntityManager();
@@ -19,8 +17,8 @@ class OrderDetailTest {
     @Test
     void testOrderDetails(){
         OrderDetail orderDetail = new OrderDetail();
-        orderDetail.setBookid(em.find(Book.class,1));
-        orderDetail.setOrderId(em.find(BookOrder.class,1));
+        orderDetail.setBook(em.find(Book.class,1));
+        orderDetail.setBookorder(em.find(BookOrder.class,1));
         orderDetail.setQuantity(2);
         orderDetail.setSubtotal(new BigDecimal(50));
 

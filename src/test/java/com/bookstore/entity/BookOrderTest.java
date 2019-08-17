@@ -19,7 +19,7 @@ class BookOrderTest {
     void testOrder(){
         BookOrder bookOrder = new BookOrder();
         bookOrder.setOrderDate(LocalDate.now());
-        bookOrder.setCustomerId(em.find(Customer.class,1));
+        bookOrder.setCustomer(em.find(Customer.class,1));
         bookOrder.setPaymentMethod("Visa");
         bookOrder.setRecipientName(em.find(Customer.class,1).getFullName());
         bookOrder.setShippingAddress(em.find(Customer.class,1).getAddress());

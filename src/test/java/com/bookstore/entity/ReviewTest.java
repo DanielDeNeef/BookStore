@@ -17,8 +17,8 @@ class ReviewTest {
     @Test
     void testReview(){
         Review review = new Review();
-        review.setBookId(em.find(Book.class,1));
-        review.setCustomerId(em.find(Customer.class,1));
+        review.setBook(em.find(Book.class,4));
+        review.setCustomerId(em.find(Customer.class,3));
         review.setComment("nice book ");
         review.setRating(4);
         review.setHeadline("readed the book");

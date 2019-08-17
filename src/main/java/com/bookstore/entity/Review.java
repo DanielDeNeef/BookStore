@@ -2,7 +2,6 @@ package com.bookstore.entity;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
 public class Review {
@@ -12,7 +11,7 @@ public class Review {
     private Integer reviewId;
     @ManyToOne
     @JoinColumn(name = "book_id")
-    private Book bookId;
+    private Book book;
     @ManyToOne
     @JoinColumn(name="customer_id")
     private Customer customerId;
@@ -30,12 +29,12 @@ public class Review {
         this.reviewId = reviewId;
     }
 
-    public Book getBookId() {
-        return bookId;
+    public Book getBook() {
+        return book;
     }
 
-    public void setBookId(Book bookId) {
-        this.bookId = bookId;
+    public void setBook(Book bookId) {
+        this.book = bookId;
     }
 
     public Customer getCustomerId() {

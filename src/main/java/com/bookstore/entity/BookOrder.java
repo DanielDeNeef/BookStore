@@ -3,7 +3,9 @@ package com.bookstore.entity;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @Table(name = "book_order")
 public class BookOrder {
@@ -13,7 +15,7 @@ public class BookOrder {
     private int orderId;
     @ManyToOne
     @JoinColumn(name = "customer_id")
-    private Customer customerId;
+    private Customer customer;
     @Column(name = "order_date",columnDefinition = "datetime")
     private LocalDate orderDate;
     @Column(columnDefinition = "float")
@@ -27,6 +29,8 @@ public class BookOrder {
     private String recipientName;
     @Column(name= "recipient_phone")
     private String recipientPhone;
+    @OneToMany(mappedBy = "bookorder",fetch = FetchType.LAZY)
+    private Set<OrderDetail>orderDetails=new HashSet<>();
 
     public BookOrder() {
     }
@@ -47,12 +51,12 @@ public class BookOrder {
         this.orderId = orderId;
     }
 
-    public Customer getCustomerId() {
-        return customerId;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setCustomerId(Customer customerId) {
-        this.customerId = customerId;
+    public void setCustomer(Customer customerId) {
+        this.customer = customerId;
     }
 
     public LocalDate getOrderDate() {
