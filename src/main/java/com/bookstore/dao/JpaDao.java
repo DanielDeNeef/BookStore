@@ -5,26 +5,26 @@ import java.util.List;
 
 public class JpaDao <E>{
 
-    protected EntityManagerFactory emf = Persistence.createEntityManagerFactory("bookstore");
-    protected EntityManager em = emf.createEntityManager();
-    protected EntityTransaction tx = em.getTransaction();
+    protected EntityManager em;
 
-    public JpaDao() {
+
+    public JpaDao(EntityManager entityManager) {
+        this.em = entityManager;
     }
 
     public E create(E entity){
-        tx.begin();
+        em.getTransaction().begin();
         em.persist(entity);
         em.flush();
         em.refresh(entity);
-        tx.commit();
+        em.getTransaction().commit();
         return entity;
     }
 
     public E update(E entity){
-        tx.begin();
+        em.getTransaction().begin();
         entity =  em.merge(entity);
-        tx.commit();
+        em.getTransaction().commit();
         return entity;
     }
 
@@ -37,10 +37,10 @@ public class JpaDao <E>{
     }
 
     public void delete(Class<E> type,Object id){
-        tx.begin();
+        em.getTransaction().begin();
         Object reference = em.getReference(type,id);
         em.remove(reference);
-        tx.commit();
+        em.getTransaction().commit();
     }
 
     public List<E> findWithNamedQuery(String queryName){

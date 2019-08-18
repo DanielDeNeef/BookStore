@@ -5,9 +5,7 @@ import com.sun.source.tree.AssertTree;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.EntityNotFoundException;
-import javax.persistence.Persistence;
-import javax.persistence.PersistenceException;
+import javax.persistence.*;
 
 import java.util.List;
 
@@ -15,14 +13,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UserDAOTest {
 
+    EntityManagerFactory emf = Persistence.createEntityManagerFactory("bookstore");
+    EntityManager em = emf.createEntityManager();
+    UserDAO userDAO = new UserDAO(em);
+
     @Test
     void testCreateUser() {
         Users users2 = new Users();
-        users2.setFullName("Mia");
-        users2.setPassword("1111");
-        users2.setEmail("Mia@mail.com");
+        users2.setFullName("Christa");
+        users2.setPassword("95432");
+        users2.setEmail("Christa@mail.com");
 
-        UserDAO userDAO = new UserDAO();
         users2 = userDAO.create(users2);
 
         assertTrue(users2.getUserId()>0);
@@ -31,7 +32,6 @@ class UserDAOTest {
     @Test
     void testCreateUsersFieldsNotSet(){
         Users users = new Users();
-        UserDAO userDAO = new UserDAO();
 
         Assertions.assertThrows(PersistenceException.class, ()->{
             userDAO.create(users);
@@ -46,7 +46,6 @@ class UserDAOTest {
         users.setFullName("mia");
         users.setPassword("99999");
 
-        UserDAO userDAO = new UserDAO();
         users=userDAO.update(users);
 
         assertEquals("mia", users.getFullName());
@@ -55,7 +54,6 @@ class UserDAOTest {
     @Test
     void testGetUsersFound(){
         Integer userId= 2;
-        UserDAO userDAO = new UserDAO();
         Users users = userDAO.read(userId);
 
         assertNotNull(users);
@@ -64,7 +62,6 @@ class UserDAOTest {
     @Test
     void testUserNotFound(){
         Integer userid = 1;
-        UserDAO userDAO = new UserDAO();
         Users users = userDAO.read(userid);
 
         assertNull(users);
@@ -73,7 +70,6 @@ class UserDAOTest {
     @Test
     void testDeleteUser(){
         Integer userid = 2;
-        UserDAO userDAO= new UserDAO();
         userDAO.delete(userid);
 
         Users users = userDAO.read(userid);
@@ -83,7 +79,6 @@ class UserDAOTest {
     @Test
     void testDeleteNonExistUser(){
         Integer userid = 2;
-        UserDAO userDAO= new UserDAO();
 
         Assertions.assertThrows(EntityNotFoundException.class, ()->{
             userDAO.delete(userid);
@@ -92,7 +87,6 @@ class UserDAOTest {
 
     @Test
     void testListAll(){
-        UserDAO userDAO=new UserDAO();
         List<Users> usersList = userDAO.listAll();
 
         usersList.forEach(users -> System.out.println(users.getFullName()));
@@ -102,7 +96,6 @@ class UserDAOTest {
 
     @Test
     void testCountusers(){
-        UserDAO userDAO = new UserDAO();
         Long userCount = userDAO.count();
         assertEquals(3,userCount);
     }

@@ -7,7 +7,8 @@ import java.util.List;
 
 public class UserDAO extends JpaDao<Users> implements GenericDAO <Users> {
 
-    public UserDAO() {
+    public UserDAO(EntityManager entityManager) {
+        super(entityManager);
     }
 
     public Users create(Users user){
