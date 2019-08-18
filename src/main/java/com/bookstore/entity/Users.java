@@ -3,6 +3,10 @@ package com.bookstore.entity;
 import javax.persistence.*;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "Users.findAll",query = "SELECT u FROM Users u ORDER BY u.fullName"),
+        @NamedQuery(name = "Users.countAll",query = "SELECT Count(*) FROM Users u")
+})
 @Table(name="users")
 public class Users {
 

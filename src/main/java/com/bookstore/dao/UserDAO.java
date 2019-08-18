@@ -15,8 +15,8 @@ public class UserDAO extends JpaDao<Users> implements GenericDAO <Users> {
     }
 
     @Override
-    public Users read(Object id) {
-        return null;
+    public Users read(Object userId) {
+        return super.find(Users.class,userId);
     }
 
     @Override
@@ -25,17 +25,17 @@ public class UserDAO extends JpaDao<Users> implements GenericDAO <Users> {
     }
 
     @Override
-    public void delete(Object id) {
-
+    public void delete(Object userid) {
+        super.delete(Users.class,userid);
     }
 
     @Override
     public List<Users> listAll() {
-        return null;
+        return super.findWithNamedQuery("Users.findAll");
     }
 
     @Override
     public long count() {
-        return 0;
+        return super.countWithNamedQuery("Users.countAll");
     }
 }

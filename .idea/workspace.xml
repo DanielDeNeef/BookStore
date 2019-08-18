@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc546eea-dc94-4894-940b-7e4e87158721" name="Default Changelist" comment="" />
+    <list default="true" id="dc546eea-dc94-4894-940b-7e4e87158721" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/JpaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/JpaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bookstore/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bookstore/entity/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bookstore/dao/UserDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bookstore/dao/UserDAOTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,11 +55,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bookstore/controller/admin/AdminHomeServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
               <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bookstore/dao/UserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#310#311#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bookstore/entity/Users.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#41#1" expanded="true" />
+                <element signature="e#0#28#1" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#487#488#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/bookstore/dao/UserDAOTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bookstore/dao/JpaDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,7 +146,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xlm" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1e7a8f6d-b933-438f-817f-fbb2b6901c18/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bookstore/entity/Users.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/bookstore/entity/UsersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bookstore/dao/ReviewEntity.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
@@ -99,9 +163,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/bookstore/entity/ReviewTest.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/dca12079-ccac-4b09-99c2-c434436c6bb1/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/bookstore/dao/GenericDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bookstore/dao/JpaDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bookstore/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/bookstore/dao/UserDAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bookstore/controller/frontend/HomeServlet.java" />
         <option value="$PROJECT_DIR$/web/frontend/login.jsp" />
         <option value="$PROJECT_DIR$/web/frontend/index.jsp" />
@@ -111,6 +172,10 @@
         <option value="$PROJECT_DIR$/web/admin/header.jsp" />
         <option value="$PROJECT_DIR$/web/admin/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/bookstore/controller/admin/AdminHomeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bookstore/dao/JpaDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bookstore/entity/Users.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bookstore/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bookstore/dao/UserDAOTest.java" />
       </list>
     </option>
   </component>
@@ -232,13 +297,16 @@
             <path>
               <item name="BookStore" type="b2602c69:ProjectViewProjectNode" />
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BookStore" type="b2602c69:ProjectViewProjectNode" />
               <item name="BookStore" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BookStore" type="b2602c69:ProjectViewProjectNode" />
@@ -263,7 +331,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/frontend/index.jsp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -299,34 +367,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.22">
-    <configuration name="CustomerTest.testCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserDAOTest.testCountusers">
+    <configuration name="UserDAOTest.testCountusers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookStore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bookstore.entity.*" />
+          <option name="PATTERN" value="com.bookstore.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.bookstore.entity" />
-      <option name="MAIN_CLASS_NAME" value="com.bookstore.entity.CustomerTest" />
-      <option name="METHOD_NAME" value="testCustomer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReviewTest.testReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookStore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bookstore.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bookstore.entity" />
-      <option name="MAIN_CLASS_NAME" value="com.bookstore.entity.ReviewTest" />
-      <option name="METHOD_NAME" value="testReview" />
+      <option name="PACKAGE_NAME" value="com.bookstore.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.bookstore.dao.UserDAOTest" />
+      <option name="METHOD_NAME" value="testCountusers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -348,7 +400,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDAOTest.testCreateUsersFieldsNotSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDAOTest.testDeleteNonExistUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookStore" />
       <extension name="coverage">
         <pattern>
@@ -358,13 +410,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bookstore.dao" />
       <option name="MAIN_CLASS_NAME" value="com.bookstore.dao.UserDAOTest" />
-      <option name="METHOD_NAME" value="testCreateUsersFieldsNotSet" />
+      <option name="METHOD_NAME" value="testDeleteNonExistUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDAOTest.testUpdateUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDAOTest.testDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookStore" />
       <extension name="coverage">
         <pattern>
@@ -374,7 +426,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bookstore.dao" />
       <option name="MAIN_CLASS_NAME" value="com.bookstore.dao.UserDAOTest" />
-      <option name="METHOD_NAME" value="testUpdateUsers" />
+      <option name="METHOD_NAME" value="testDeleteUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDAOTest.testListAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookStore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bookstore.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bookstore.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.bookstore.dao.UserDAOTest" />
+      <option name="METHOD_NAME" value="testListAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -517,20 +585,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CustomerTest.testCustomer" />
-      <item itemvalue="JUnit.ReviewTest.testReview" />
-      <item itemvalue="JUnit.UserDAOTest.testCreateUser" />
-      <item itemvalue="JUnit.UserDAOTest.testCreateUsersFieldsNotSet" />
-      <item itemvalue="JUnit.UserDAOTest.testUpdateUsers" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.22" />
+      <item itemvalue="JUnit.UserDAOTest.testDeleteUser" />
+      <item itemvalue="JUnit.UserDAOTest.testDeleteNonExistUser" />
+      <item itemvalue="JUnit.UserDAOTest.testCreateUser" />
+      <item itemvalue="JUnit.UserDAOTest.testListAll" />
+      <item itemvalue="JUnit.UserDAOTest.testCountusers" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserDAOTest.testUpdateUsers" />
-        <item itemvalue="JUnit.UserDAOTest.testCreateUsersFieldsNotSet" />
+        <item itemvalue="JUnit.UserDAOTest.testCountusers" />
+        <item itemvalue="JUnit.UserDAOTest.testListAll" />
         <item itemvalue="JUnit.UserDAOTest.testCreateUser" />
-        <item itemvalue="JUnit.ReviewTest.testReview" />
-        <item itemvalue="JUnit.CustomerTest.testCustomer" />
+        <item itemvalue="JUnit.UserDAOTest.testDeleteNonExistUser" />
+        <item itemvalue="JUnit.UserDAOTest.testDeleteUser" />
       </list>
     </recent_temporary>
   </component>
@@ -550,44 +618,44 @@
       <workItem from="1565984292418" duration="8150000" />
       <workItem from="1566025908941" duration="13959000" />
       <workItem from="1566071229584" duration="7134000" />
-      <workItem from="1566115860106" duration="1870000" />
+      <workItem from="1566115860106" duration="5690000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookTest_checkBookEntity - 2019.08.17 at 13h 11m 20s.xml">
-      <configuration name="BookTest.checkBookEntity" configurationId="JUnit" />
+    <history-entry file="UserDAOTest_testUserNotFound - 2019.08.18 at 11h 02m 51s.xml">
+      <configuration name="UserDAOTest.testUserNotFound" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReviewTest_testReview - 2019.08.17 at 13h 12m 16s.xml">
-      <configuration name="ReviewTest.testReview" configurationId="JUnit" />
+    <history-entry file="UserDAOTest_testUserNotFound - 2019.08.18 at 11h 03m 49s.xml">
+      <configuration name="UserDAOTest.testUserNotFound" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerTest_testCustomer - 2019.08.17 at 13h 12m 30s.xml">
-      <configuration name="CustomerTest.testCustomer" configurationId="JUnit" />
+    <history-entry file="UserDAOTest_testDeleteUser - 2019.08.18 at 11h 09m 41s.xml">
+      <configuration name="UserDAOTest.testDeleteUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReviewTest_testReview - 2019.08.17 at 13h 12m 52s.xml">
-      <configuration name="ReviewTest.testReview" configurationId="JUnit" />
+    <history-entry file="UserDAOTest_testDeleteNonExistUser - 2019.08.18 at 11h 13m 57s.xml">
+      <configuration name="UserDAOTest.testDeleteNonExistUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDAOTest_testCreateUser - 2019.08.17 at 22h 22m 42s.xml">
+    <history-entry file="UserDAOTest_testDeleteNonExistUser - 2019.08.18 at 11h 18m 41s.xml">
+      <configuration name="UserDAOTest.testDeleteNonExistUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserDAOTest_testCreateUser - 2019.08.18 at 11h 32m 30s.xml">
       <configuration name="UserDAOTest.testCreateUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDAOTest_testCreateUser - 2019.08.17 at 22h 23m 20s.xml">
+    <history-entry file="UserDAOTest_testCreateUser - 2019.08.18 at 11h 32m 44s.xml">
       <configuration name="UserDAOTest.testCreateUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDAOTest_testCreateUsersFieldsNotSet - 2019.08.17 at 22h 28m 35s.xml">
-      <configuration name="UserDAOTest.testCreateUsersFieldsNotSet" configurationId="JUnit" />
+    <history-entry file="UserDAOTest_testCreateUser - 2019.08.18 at 11h 33m 02s.xml">
+      <configuration name="UserDAOTest.testCreateUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDAOTest_testCreateUsersFieldsNotSet - 2019.08.17 at 22h 30m 48s.xml">
-      <configuration name="UserDAOTest.testCreateUsersFieldsNotSet" configurationId="JUnit" />
+    <history-entry file="UserDAOTest_testListAll - 2019.08.18 at 11h 34m 39s.xml">
+      <configuration name="UserDAOTest.testListAll" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDAOTest_testCreateUsersFieldsNotSet - 2019.08.17 at 22h 37m 25s.xml">
-      <configuration name="UserDAOTest.testCreateUsersFieldsNotSet" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDAOTest_testUpdateUsers - 2019.08.17 at 22h 45m 21s.xml">
-      <configuration name="UserDAOTest.testUpdateUsers" configurationId="JUnit" />
+    <history-entry file="UserDAOTest_testListAll - 2019.08.18 at 11h 36m 21s.xml">
+      <configuration name="UserDAOTest.testListAll" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34211000" />
+    <option name="totallyTimeSpent" value="38031000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -609,7 +677,7 @@
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" id="Web" order="7" sideWeight="0.5041459" side_tool="true" visible="true" weight="0.20735608" />
+      <window_info id="Web" order="7" sideWeight="0.5041459" side_tool="true" visible="true" weight="0.20735608" />
       <window_info id="Persistence" order="8" sideWeight="0.50248754" side_tool="true" weight="0.26012793" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -633,7 +701,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.2249467" />
+      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.2249467" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -822,15 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://dca12079-ccac-4b09-99c2-c434436c6bb1/schema/bookstore/table/book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="49a10ecd-51e4-4fb1-b080-3d413eb2c26d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://dca12079-ccac-4b09-99c2-c434436c6bb1/schema/bookstore/table/book_order">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="49a10ecd-51e4-4fb1-b080-3d413eb2c26d">
@@ -910,22 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://dca12079-ccac-4b09-99c2-c434436c6bb1/schema/bookstore/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="49a10ecd-51e4-4fb1-b080-3d413eb2c26d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/bookstore/dao/UserDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -937,39 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1474">
           <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bookstore/dao/JpaDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="28" column="20" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="28" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bookstore/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bookstore/entity/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding>
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,6 +1046,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://dca12079-ccac-4b09-99c2-c434436c6bb1/schema/bookstore/table/book">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="e17348f6-6e3b-4695-805d-5bc26efbcd02">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://dca12079-ccac-4b09-99c2-c434436c6bb1/schema/bookstore/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="e17348f6-6e3b-4695-805d-5bc26efbcd02">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bookstore/dao/JpaDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bookstore/entity/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#1" expanded="true" />
+            <element signature="e#0#28#1" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bookstore/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bookstore/dao/UserDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
         </state>
       </provider>
     </entry>
